@@ -1,2 +1,4 @@
 <input type="text" [(ngModel)]="name">
+<!-- ngModel needed [()] as shown above. Using the ="name" code we can change the below <p> tag to whatever is typed into the input. ngModel is not added on creation of the project and must be added into the 
+  app.module.ts file in the imports at the top and inside the imports inside the ngModule. Angular has several useful ng components we can use but they need to be imported. -->
 <p>{{name}}</p>
