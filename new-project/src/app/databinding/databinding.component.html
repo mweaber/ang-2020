@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>Data Binding Practice</p>
+      <br />
+      <label>Please enter username</label>
+      <input type="text" class="form-control" [(ngModel)]="userName" />
+      <p>Hello: {{ userName }}</p>
+      <button
+        class="btn btn-success"
+        [disabled]="userName === ''"
+        (click)="resetUserName()"
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+</div>
