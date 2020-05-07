@@ -2,12 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [`
+        .online {
+            color:white;
+        }
+    `]
 })
 
-export class ServerComponent { 
-    serverID:string = '10.345.232.356';
-    serverStatus:string = 'offline';
+export class ServerComponent {
+    serverID: string = '10';
+    serverStatus: string = 'offline';
 
     constructor() {
         this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline'

@@ -18,5 +18,5 @@
   <p>No server was created.</p> 
   ; else noServer ~~~ This line is added above after the serverCreated.
 </ng-template> -->
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
+

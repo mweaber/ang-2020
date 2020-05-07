@@ -1,0 +1,14 @@
+<!-- <button class="btn btn-success" (click)="showToggle = !showToggle">
+  Display Details
+</button> -->
+<button class="btn btn-success" (click)="onShowToggle()">
+  Display Details
+</button>
+<p *ngIf="showToggle">Issa me: Mario</p>
+<div 
+  *ngFor="let logItem of log; let i = index"
+  [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{'white-text':i >= 4}"
+  >
+  {{ logItem }}
+</div>
